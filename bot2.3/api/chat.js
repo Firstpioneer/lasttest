@@ -26,7 +26,7 @@ const openai = new OpenAI({
 
 
 // 处理聊天请求
-app.post('/', async (req, res) => {
+app.post('/api/chat', async (req, res) => {
     try {
         const { messages } = req.body;
     /*
